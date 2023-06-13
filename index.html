@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta tag-->
+    <meta charset="UTF-8">
+    <title>Order delicious pizza</title>
+    <meta name="author" content="Rithikraj padinhare veettil">
+    <meta name="description" content="how to order pizza">
+    <link rel="pizza icon" href="image/pizza image.jpeg" type="image\pizza">
+</head>
+<body>
+    <!--Header section-->
+<header>
+<h1>Satisfy Your Cravings:the perfect pizza delight!</h1>
+</header>
+<!--Main section-->
+<main>
+    <!--using form here-->
+    <form action="second.html" method="post">
+        <!--usage of fieldset-->
+        <fieldset>
+            <legend><strong>Contact details</strong></legend>
+            <!--Name,phone,email as contact details-->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="enter your name" required>
+            <br><br>
+            <label for="phone number">Phone</label>
+            <input type="text" id="phone" name="phone" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" placeholder="(123) 456-7890" >
+            <br><br>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="enter your email"required>
+        </fieldset>
+        <!--using another fieldset for pizza details-->
+        <fieldset>
+            <legend><strong>Make Your Own Pizza</strong></legend>
+            <!--name of pizza using text input-->
+            <label for="pizza name">Name Of Pizza</label>
+            <input type="text" id="pizza name" name="pizza name"><br><br>
+            <!--preference by radio input-->
+            <label>Preference:</label>
+            <input type="radio" id="veg" name="Preference" value="Veg">
+            <label for="veg">Veg</label>
+            <input type="radio" id="Non-Veg" name="Preference" value="Non-Veg">
+            <label for="Non-Veg">Non-Veg</label><br><br>
+            <!--number of pizza by number input-->
+            <label for="number of pizzas">Number of pizzas</label>
+            <input type="number" id="number of pizzas" name="number of pizzas" min="1"><br><br>
+            <!--pizza size with the help of select element-->
+            <label for="size">Size</label>
+            <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option> 
+            <option value="XL">Extra Large</option>
+            </select><br><br>
+            <!--shape of pizza using radio input-->
+            <label for="shape">Shape</label>
+            <input type="radio" id="round" name="shape" value="round">
+            <label for="round">Round</label>
+            <input type="radio" id="square" name="shape" value="square">
+            <label for="square">Square</label><br><br>
+            <!--topping by checkbox input-->
+            <label for="shape">Toppings</label>
+            <input type="checkbox" id="Extra cheese" name="Toppings" value="Extra cheese">
+            <label for="extra cheese">Extra cheese</label>
+            <input type="checkbox" id="pepperoni" name="Toppings" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="sausage" name="Toppings" value="sausage">
+            <label for="sausage">Sausage</label>
+            <input type="checkbox" id="Onion" name="Toppings" value="Onion">
+            <label for="Onion">Onion</label><br><br>
+            <!--crust type with the help of radio input-->
+            <label for="crust type">Crust type</label>
+            <input type="radio" id="thin" name="crust type" value="thin">
+            <label for="thin">Thin Crust</label>
+            <input type="radio" id="deep dish" name="crust type" value="deep dish">
+            <label for="deep dish">Deep Dish</label>
+            <input type="radio" id="Cracker crust" name="crust type" value="Cracker crust">
+            <label for="Cracker crust">Cracker Crust</label>
+           </fieldset> <!--ending of fieldset-->
+           <!--h2 used  and also an image-->
+           <h2><em>Bon appetit!</em></h2>
+           <img src="image/pizza eating.jpeg" alt="pizza eating image"><br><br>
+           <!--eating option with the help of radio input-->
+           <label for="options"><strong> Eating Options</strong></label>
+            <input type="radio" id="take out" name="options" value="take out">
+            <label for="take out">Take Out</label>
+            <input type="radio" id="delivery" name="options" value="delivery">
+            <label for="delivery">Delivery</label>
+            <input type="radio" id="eat in" name="options" value="eat in">
+            <label for="eat in">Eat In</label>
+            <!--a brief paragraph about delivery option-->
+            <p><strong> Note:</strong>Delivery will take around 20 minutes.If you are taking delivery option please add your address below</p>
+            <img src="image/delivery.jpeg" alt="delivery image"><br><br>
+            <!--text input used to type address-->
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="enter your address"> <br><br>
+            <!--range input used to find customer's satisfaction-->
+            <label for="Satisfaction">Please rate your experience</label>
+  <input type="range" id="Satisfaction" name="Satisfaction" min="0" max="10"><br><br>
+  <!--reset, submit button-->
+  <p>if you have any trouble using this website, just reset.Otherwise please submit</p>
+  <input type="reset" value="reset"><br><br>
+  <input type="submit" value="Submit"><br><br>
+    </form> <!--end of form-->
+</main><!--end of main section-->
+
+ <!--footer section-->
+<footer>
+    <img src="image/pizza store.jpeg" alt="pizza store image">
+    <p>Please visit our shop to know about more..</p>
+</footer>
+</body>
+
+</html>
